@@ -1,15 +1,42 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jar-gK-7O5">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Image Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="ImageInterfaceController" customModule="Digitaion_Crown__TEST__WatchKit_Extension">
+                    <items>
+                        <imageView alignment="left" verticalAlignment="center" image="Image" id="IPu-gD-Fnm"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="IPu-gD-Fnm" id="vUd-zY-i3U"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="298" y="211"/>
+        </scene>
+        <!--Log Interface Controller-->
+        <scene sceneID="ONz-eB-epJ">
+            <objects>
+                <controller id="jar-gK-7O5" customClass="LogInterfaceController" customModule="Digitaion_Crown__TEST__WatchKit_Extension">
+                    <items>
+                        <label width="1" height="1" alignment="left" verticalAlignment="center" text="Digital Crown Log" numberOfLines="0" id="KnH-qA-5MV"/>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="KnH-qA-5MV" id="iLP-ic-1qU"/>
+                        <segue destination="AgC-eL-Hgc" kind="relationship" relationship="nextPage" id="7bC-8R-nek"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-28" y="211"/>
         </scene>
     </scenes>
 </document>

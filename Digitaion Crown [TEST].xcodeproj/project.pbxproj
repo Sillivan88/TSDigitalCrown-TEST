@@ -16,9 +16,10 @@
 		E9D268F31E3F916200B2C4DB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D268F11E3F916200B2C4DB /* Interface.storyboard */; };
 		E9D268F51E3F916200B2C4DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D268F41E3F916200B2C4DB /* Assets.xcassets */; };
 		E9D268FC1E3F916200B2C4DB /* Digitaion Crown [TEST] WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E9D268FB1E3F916200B2C4DB /* Digitaion Crown [TEST] WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		E9D269011E3F916200B2C4DB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D269001E3F916200B2C4DB /* InterfaceController.swift */; };
+		E9D269011E3F916200B2C4DB /* ImageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D269001E3F916200B2C4DB /* ImageInterfaceController.swift */; };
 		E9D269031E3F916200B2C4DB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D269021E3F916200B2C4DB /* ExtensionDelegate.swift */; };
 		E9D269051E3F916200B2C4DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D269041E3F916200B2C4DB /* Assets.xcassets */; };
+		E9D7E51A1E40C714008E03FF /* LogInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D7E5191E40C714008E03FF /* LogInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,10 +77,11 @@
 		E9D268F41E3F916200B2C4DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9D268F61E3F916200B2C4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9D268FB1E3F916200B2C4DB /* Digitaion Crown [TEST] WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Digitaion Crown [TEST] WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9D269001E3F916200B2C4DB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E9D269001E3F916200B2C4DB /* ImageInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInterfaceController.swift; sourceTree = "<group>"; };
 		E9D269021E3F916200B2C4DB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		E9D269041E3F916200B2C4DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9D269061E3F916200B2C4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9D7E5191E40C714008E03FF /* LogInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +148,8 @@
 		E9D268FF1E3F916200B2C4DB /* Digitaion Crown [TEST] WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				E9D269001E3F916200B2C4DB /* InterfaceController.swift */,
+				E9D7E5191E40C714008E03FF /* LogInterfaceController.swift */,
+				E9D269001E3F916200B2C4DB /* ImageInterfaceController.swift */,
 				E9D269021E3F916200B2C4DB /* ExtensionDelegate.swift */,
 				E9D269041E3F916200B2C4DB /* Assets.xcassets */,
 				E9D269061E3F916200B2C4DB /* Info.plist */,
@@ -301,8 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9D7E51A1E40C714008E03FF /* LogInterfaceController.swift in Sources */,
 				E9D269031E3F916200B2C4DB /* ExtensionDelegate.swift in Sources */,
-				E9D269011E3F916200B2C4DB /* InterfaceController.swift in Sources */,
+				E9D269011E3F916200B2C4DB /* ImageInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +559,7 @@
 				E9D2690B1E3F916300B2C4DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9D2690D1E3F916300B2C4DB /* Build configuration list for PBXNativeTarget "Digitaion Crown [TEST] WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +568,7 @@
 				E9D2690F1E3F916300B2C4DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9D269111E3F916300B2C4DB /* Build configuration list for PBXNativeTarget "Digitaion Crown [TEST]" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +577,7 @@
 				E9D269131E3F916300B2C4DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
